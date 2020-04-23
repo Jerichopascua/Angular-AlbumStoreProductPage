@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  StartmeAngular(){
+    console.log('Starting angular...');
+  }
 }
