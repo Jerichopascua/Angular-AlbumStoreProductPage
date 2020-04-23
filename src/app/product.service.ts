@@ -5,9 +5,12 @@ import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 import { Album } from './album';
-// import { Observable, observable } from 'rxjs';
+import { Observable, observable } from 'rxjs';
 
-import {Observable} from 'rxjs/Observable';
+import { map } from 'rxjs/operators';
+import 'rxjs/add/operator/map';
+
+//import {Observable} from 'rxjs/Observable';
 
 
 @Injectable({
@@ -21,8 +24,6 @@ export class ProductService {
 
     // getAlbum(id:number){
     getAlbum(id:number): Observable<Album>{    
-        // return this._http.get(this._albumUrl).map((response) =>response.json());               
-        return this._http.get(this._albumUrl).map(Response => <Album>Response.json());
-        
+      return this._http.get(this._albumUrl).map(response => <Album>response.json());
     }   
 }
