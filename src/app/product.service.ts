@@ -8,7 +8,7 @@ import { Album } from './album';
 import { Observable, observable } from 'rxjs';
 
 import { map } from 'rxjs/operators';
-import 'rxjs/add/operator/map';
+
 
 //import {Observable} from 'rxjs/Observable';
 
