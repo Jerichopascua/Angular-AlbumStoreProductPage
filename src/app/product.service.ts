@@ -5,11 +5,12 @@ import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 import { Album } from './album';
-import { Observable, observable } from 'rxjs';
 
-import { map } from 'rxjs/operators';
+import {Observable} from 'rxjs/Observable';
 
+// import { Observable, observable } from 'rxjs';
 
+// import { map } from 'rxjs/operators';
 //import {Observable} from 'rxjs/Observable';
 
 
