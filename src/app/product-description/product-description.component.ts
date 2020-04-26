@@ -12,10 +12,12 @@ import { Album } from '../album';
 export class ProductDescriptionComponent implements OnInit {
    
   // albumInfo: Album;
-  albumInfo;
-  myDate: Date;   
-  constructor(private _productService: ProductService) { }
+  // myDate: Date;   
   // this.myDate = new Date();
+  
+  albumInfo;
+  
+  constructor(private _productService: ProductService) { }  
   ngOnInit() {    
     this._productService.getAlbum(1).subscribe(response => this.albumInfo=response);                
   }
