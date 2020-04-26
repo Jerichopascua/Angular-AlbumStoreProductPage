@@ -1,16 +1,16 @@
-<div class="row description">
-    <div class="col-sm-2">            
       <!-- <img src="assets/opacity-zero.jpg" alt="product image" /> -->
-      <img src={{albumInfo?.album.coverImage}} alt="product image" />                  
-    </div>
-    <div class="col-sm-6">
-      <!-- <p class="album-name">Opacity Zero</p>       -->
+            <!-- <p class="album-name">Opacity Zero</p>       -->
       <!-- <p>{{ myDate | date:'d MMMM y'}}</p>
       <p>{{ myDate | date:'hh:mm:ss'}}</p>     -->
 
+<div class="row description">
+    <div class="col-sm-2">            
+      <img src={{albumInfo?.album.coverImage}} alt="product image" />                  
+    </div>
+    <!-- <div class="col-sm-6"> -->
+    <div class="col-sm-6">
       <p class="album-name">{{albumInfo?.album.name}}</p>      
       <p class="band-name">{{albumInfo?.artist}}</p>      
       <p class="album-release-date">{{albumInfo?.album.releaseDate}}</p>      
-
     </div>
 </div>
