@@ -4,6 +4,10 @@ import { ProductService } from '../product.service';
 
 import { Album } from '../album';
 
+// albumInfo: Album;
+  // myDate: Date;   
+  // this.myDate = new Date();
+
 @Component({
   selector: 'app-product-description',
   templateUrl: './product-description.component.html',
@@ -11,15 +15,12 @@ import { Album } from '../album';
 })
 export class ProductDescriptionComponent implements OnInit {
    
-  // albumInfo: Album;
-  // myDate: Date;   
-  // this.myDate = new Date();
-  
   albumInfo;
   
   constructor(private _productService: ProductService) { }  
-  ngOnInit() {    
-    this._productService.getAlbum(1).subscribe(response => this.albumInfo=response);                
+
+  ngOnInit() {        
+    this._productService.getAlbum(1).subscribe(response => this.albumInfo=response);
   }
 
 }
