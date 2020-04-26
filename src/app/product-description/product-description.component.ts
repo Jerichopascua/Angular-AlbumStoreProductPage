@@ -15,14 +15,9 @@ export class ProductDescriptionComponent implements OnInit {
   albumInfo;
   myDate: Date;   
   constructor(private _productService: ProductService) { }
-
-  ngOnInit() {
-    
-    this._productService.getAlbum(1).subscribe(response => this.albumInfo=response);            
-    // this.myDate = new Date();
-    // console.log('=>', this.albumInfo.releaseDate);
-
-    // this.state.galerie.length > 0 ? console.log('=>', this.state.gallery.album.id) : '';
+  // this.myDate = new Date();
+  ngOnInit() {    
+    this._productService.getAlbum(1).subscribe(response => this.albumInfo=response);                
   }
 
 }
