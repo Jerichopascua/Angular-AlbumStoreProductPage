@@ -18,7 +18,7 @@ import { RouterModule, Routes} from '@angular/router';
 
 const appRoutes: Routes = [ 
   { path: 'products', component: ProductListComponent },
-  { path: 'produts/:id', component: ProductPageComponent },
+  { path: 'products/:id', component: ProductPageComponent },
   { path: '', redirectTo: 'products',pathMatch: 'full'} 
 ];
 
